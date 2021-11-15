@@ -164,8 +164,8 @@ int main(int argc, char* argv[]) {
     
     // These commands will allocate memory on the Device. The cl::Buffer objects can
     // be used to reference the memory locations on the device. 
-    cl::Buffer buf_res_mix(context, CL_MEM_WRITE_ONLY, size_hsh);
-    cl::Buffer buf_res_hsh(context, CL_MEM_WRITE_ONLY, size_hsh);
+    cl::Buffer buf_res_mix(context, CL_MEM_READ_WRITE, size_hsh);
+    cl::Buffer buf_res_hsh(context, CL_MEM_READ_WRITE, size_hsh);
     cl::Buffer buf_dag(context, CL_MEM_READ_ONLY, size_dag);
     cl::Buffer buf_hdr(context, CL_MEM_READ_ONLY, size_hsh);
     
